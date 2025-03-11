@@ -1,13 +1,16 @@
 # DataUrl
 [![Packagist][packagist-badge]][packagist-url]
 [![License][license-badge]][license-url]
+[![Docs][docs-badge]][docs-url]
 [![CI][ci-badge]][ci-url]
-[![Codecov][codecov-badge]][codecov-url]
+[![Code coverage][codecov-badge]][codecov-url]
 
 [packagist-badge]: https://img.shields.io/packagist/v/neoncitylights/data-url?style=flat-square
 [packagist-url]: https://packagist.org/packages/neoncitylights/data-url
 [license-badge]: https://img.shields.io/badge/License-MIT-blue?style=flat-square
 [license-url]: #license
+[docs-badge]: https://img.shields.io/github/deployments/php-lights/data-url/github-pages?label=docs&style=flat-square
+[docs-url]: https://php-lights.github.io/data-url/
 [ci-badge]: https://img.shields.io/github/actions/workflow/status/php-lights/php-data-url/.github/workflows/php.yml?style=flat-square
 [ci-url]: https://github.com/php-lights/php-data-url/actions/workflows/php.yml
 [codecov-badge]: https://img.shields.io/codecov/c/github/php-lights/data-url?style=flat-square
