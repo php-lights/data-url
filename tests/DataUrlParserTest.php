@@ -22,7 +22,7 @@ class DataUrlParserTest extends TestCase {
 	#[DataProvider( "provideInvalidDataUrls" )]
 	public function testParseOrNull( string $invalidDataUrl ): void {
 		$parser = new DataUrlParser( new MediaTypeParser() );
-		$this->assertNull($parser->parseOrNull($invalidDataUrl));
+		$this->assertNull( $parser->parseOrNull( $invalidDataUrl ) );
 	}
 
 	#[DataProvider( "provideValidTextBasedDataUrls" )]

@@ -7,6 +7,10 @@ on:
   pull_request:
     branches: [ main ]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -44,4 +48,4 @@ jobs:
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         verbose: true
-        files: coverage.xml
+        files: .phpunit/coverage.xml
