@@ -10,7 +10,7 @@
 	</paths>
 	<version number="3.0.0">
 		<api format="php">
-			<default-package-name>neoncitylights/data-url</default-package-name>
+			<default-package-name>DataUrl</default-package-name>
 			<source dsn=".">
 				<path>src</path>
 			</source>
