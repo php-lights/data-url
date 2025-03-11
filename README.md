@@ -8,10 +8,10 @@
 [packagist-url]: https://packagist.org/packages/neoncitylights/data-url
 [license-badge]: https://img.shields.io/badge/License-MIT-blue?style=flat-square
 [license-url]: #license
-[ci-badge]: https://img.shields.io/github/actions/workflow/status/neoncitylights/php-data-url/.github/workflows/php.yml?style=flat-square
-[ci-url]: https://github.com/neoncitylights/php-data-url/actions/workflows/php.yml
-[codecov-badge]: https://img.shields.io/codecov/c/github/neoncitylights/php-data-url?style=flat-square
-[codecov-url]: https://app.codecov.io/gh/neoncitylights/php-data-url
+[ci-badge]: https://img.shields.io/github/actions/workflow/status/php-lights/php-data-url/.github/workflows/php.yml?style=flat-square
+[ci-url]: https://github.com/php-lights/php-data-url/actions/workflows/php.yml
+[codecov-badge]: https://img.shields.io/codecov/c/github/php-lights/data-url?style=flat-square
+[codecov-url]: https://app.codecov.io/gh/php-lights/data-url
 
 A small PHP library for dealing with data URLs, which contain a media type and an encoded base64 string.
 

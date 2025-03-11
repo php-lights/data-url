@@ -13,12 +13,6 @@
 		"data uri",
 		"rfc 2397"
 	],
-	"funding": [
-		{
-			"type": "github",
-			"url": "https://github.com/sponsors/neoncitylights"
-		}
-	],
 	"autoload": {
 		"psr-4": {
 			"Neoncitylights\\DataUrl\\": "src/"
@@ -41,17 +35,17 @@
 		"phpunit/phpunit": "11.5.6"
 	},
 	"scripts": {
-		"lint": "parallel-lint . --exclude vendor --exclude node_modules",
-		"phpcs": "phpcs -p -s",
-		"test:phpunit-clover": "phpunit tests --coverage-clover coverage.xml",
-		"test:phpunit-xml": "phpunit tests --coverage-xml coverage",
-		"test:phpunit-html": "phpunit tests --coverage-html coverage",
 		"test": [
 			"@lint",
-			"@phpcs",
-			"@test:phpunit-clover",
-			"minus-x check ."
+			"@phpunit:xml",
+			"minus-x check .",
+			"@phpcs"
 		],
+		"lint": "parallel-lint . --exclude vendor --exclude node_modules",
+		"phpcs": "phpcs -p -s",
+		"phpunit": "phpunit tests",
+		"phpunit:xml": "@phpunit --coverage-clover .phpunit/coverage.xml",
+		"phpunit:html": "@phpunit --coverage-html .phpunit/html/",
 		"fix": [
 			"minus-x fix .",
 			"phpcbf"

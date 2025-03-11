@@ -12,6 +12,6 @@ class DataUrlParserExceptionTest extends TestCase {
 	public function testConstructor(): void {
 		$this->expectException( DataUrlParserException::class );
 		throw new DataUrlParserException(
-			'A valid data URL must not be an empty string.', '');
+			'A valid data URL must not be an empty string.', '' );
 	}
 }
